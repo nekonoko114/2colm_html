@@ -1,0 +1,176 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.5;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.containr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a:hover {
+  opacity: 0.6;
+  color: #a70808;
+}
+
+.btn:active {
+  -webkit-box-shadow: #360b0b;
+          box-shadow: #360b0b;
+  background-color: rgba(255, 0, 0, 0.432);
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header {
+  background-image: url(/img/sanple_img.png.jpg);
+  min-height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  float: left;
+  padding: 10px;
+}
+
+header .nav {
+  float: right;
+}
+
+header .nav li {
+  float: left;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+header .nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.header-text {
+  padding: 130px 100px 50px 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: #fff;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn-wrapper {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.btn-wrapper p {
+  font-size: 20px;
+}
+
+#main {
+  background-color: #c5bdbd;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  padding: 50px;
+}
+
+article h1 {
+  padding: 30px 0 30px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.article-text {
+  text-align: center;
+}
+
+aside {
+  padding-right: 30px;
+}
+
+aside h3 {
+  padding: 30px 0 30px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+aside li {
+  font-size: 15px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding: 3px 0;
+}
+
+.contact {
+  padding: 70px 30px 55px 70px;
+  background-image: url(../img/apple-img.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact .section-title {
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.contact label {
+  margin-top: 10px;
+  display: block;
+  color: #fff;
+  padding: 5px 0;
+}
+
+input[type="text"], [type="email"], [type="datetime-local"] {
+  width: 400px;
+  padding: 20px;
+  display: inline-block;
+  border: 3px solid #e5e4ec;
+  border-radius: 10px;
+}
+
+.fr {
+  float: right;
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */
