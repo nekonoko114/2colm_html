@@ -37,7 +37,6 @@ a:hover {
 
 header {
   background-image: url(/img/sanple_img.png.jpg);
-  min-height: 75vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -60,6 +59,12 @@ header .nav li {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  header .nav li {
+    font: none;
+  }
+}
+
 header .nav a {
   color: #fff;
   font-weight: bold;
@@ -73,11 +78,25 @@ header .nav a {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .header-text {
+    font-size: 20px;
+  }
+}
+
 .btn {
   padding: 8px 24px;
   color: #fff;
   display: inline-block;
   opacity: 0.8;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 3px 12px;
+    border-radius: 4px;
+  }
 }
 
 .signup {
@@ -106,9 +125,16 @@ header .nav a {
   background-color: #c5bdbd;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% 30%;
-      grid-template-columns: 70% 30%;
+  -ms-grid-columns: 65% 40%;
+      grid-template-columns: 65% 40%;
   padding: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    padding: 10px;
+    grid-template: none;
+  }
 }
 
 article h1 {
@@ -118,12 +144,25 @@ article h1 {
   font-weight: bold;
 }
 
+@media screen and (max-width: 600px) {
+  article h1 {
+    padding: 10px;
+  }
+}
+
 .article-text {
   text-align: center;
 }
 
 aside {
   padding-right: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  aside {
+    padding-right: 0;
+    margin-right: 0;
+  }
 }
 
 aside h3 {
@@ -141,17 +180,41 @@ aside li {
   padding: 3px 0;
 }
 
+.nav-item__top {
+  float: left;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item__top {
+    float: none;
+    text-align: center;
+  }
+}
+
 .contact {
   padding: 70px 30px 55px 70px;
   background-image: url(../img/apple-img.jpg);
   background-size: contain;
-  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 .contact .section-title {
   font-size: 50px;
   padding-bottom: 20px;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .section-title {
+    font-size: 20px;
+  }
 }
 
 .contact label {
@@ -161,12 +224,26 @@ aside li {
   padding: 5px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .contact label {
+    margin: 0;
+    padding: 2px;
+  }
+}
+
 input[type="text"], [type="email"], [type="datetime-local"] {
   width: 400px;
   padding: 20px;
   display: inline-block;
   border: 3px solid #e5e4ec;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  input[type="text"], [type="email"], [type="datetime-local"] {
+    width: 30%;
+    padding: 1px;
+  }
 }
 
 .fr {
